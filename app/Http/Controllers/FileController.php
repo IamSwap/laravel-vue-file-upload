@@ -28,7 +28,7 @@ class FileController extends Controller
 
     public function download(File $file)
     {
-        $path = storage_path('/app/documents/' . $file->path);
+        $path = Storage::path('documents/' . $file->path);
 
         $name = $file->name;
 
